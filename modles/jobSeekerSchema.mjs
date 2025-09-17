@@ -19,3 +19,6 @@ const jobSeekerSchema =  new mongoose.Schema({
 jobSeekerSchema.index({ jobSeekerName: 1 });
 jobSeekerSchema.index({ jobSeekerAddress: 1 });
 jobSeekerSchema.index({ jobSeekerField: 1 });
+
+
+export default mongoose.model("JobSeekers", jobSeekerSchema);
