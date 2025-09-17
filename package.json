@@ -19,7 +19,8 @@
   "homepage": "https://github.com/MelkWold/sba6_mongoDB_database_application#readme",
   "dependencies": {
     "ejs": "^3.1.10",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "mongoose": "^8.18.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
