@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const jobAdvertisementSchema = new mongoose.Schema ({
     title: { type: String, required: true },
     description: { type: String, required: true },
-    requiredSkills: { type: String, required: true },
+    requiredSkills: { type: [String], required: true, validate: v => Array.isArray(v) && v.length > 0 },
     salary: { type: Number, required:true }
 
 })
@@ -12,4 +12,4 @@ jobAdvertisementSchema.index({ salary: 1 });
 jobAdvertisementSchema.index({ requiredSkills : 1 })
 
 
-export default mongoose.model("JobAdvertisements", jobAdvertisementSchema);
+export default mongoose.model("Jobs", jobAdvertisementSchema);

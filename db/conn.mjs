@@ -15,6 +15,7 @@ async function databaseConnection() {
         console.log("MongoBD connected successfully ...")
     } catch(err){
         console.error(`Error: err.message`);
+        process.exit(1);
     }
 }
 

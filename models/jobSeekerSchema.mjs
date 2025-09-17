@@ -2,17 +2,19 @@ import mongoose from "mongoose";
 
 const jobSeekerSchema =  new mongoose.Schema({
     jobSeekserName: {type: String, required:true},
-    jobSeekserAddress: {
-        city: String, required:true,
-        state: String, required:true,
-        zipcode: String, required:true,
-        country: String, required:true},
-    jobSeekserField: {type: String,
-        enum: {
-            values: ["IT Support", "Fullstack Development", "Backend", "Frontend", "Teacher", "STEM", "Arts", "Other"],
-            required:true
+    jobSeekserAddress: 
+    {
+        city: { type: String, required:true},
+        state: { type: String, required:true},
+        zipcode: { type: String, required:true},
+        country: { type: String, required:true}
+    },
+    jobSeekserField: 
+    {
+        type: String,
+        enum: ["IT Support", "Fullstack Development", "Backend", "Frontend", "Teacher", "STEM", "Arts", "Other"],
+        required:true
         }
-    } 
 })
 
 // Create indices for fast querying
