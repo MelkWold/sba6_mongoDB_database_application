@@ -10,6 +10,10 @@
 
 
 ## Project Description and Features
+This project is designed to create a database and user interface that connects employers, employees and job advertisements. Three schemas are defined in the project:
+1. employerSchema
+2. jobAdvertisementSchema
+3. jobSeekerSchema
 
 
 ## Languages, tools and frameworks uses:
