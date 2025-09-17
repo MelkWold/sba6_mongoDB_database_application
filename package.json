@@ -1,0 +1,27 @@
+{
+  "name": "sba6_mongodb_database_application",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.mjs",
+  "scripts": {
+    "start": "nodemon server.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MelkWold/sba6_mongoDB_database_application.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MelkWold/sba6_mongoDB_database_application/issues"
+  },
+  "homepage": "https://github.com/MelkWold/sba6_mongoDB_database_application#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
