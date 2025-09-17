@@ -1,7 +1,7 @@
 // Imports
 import express from "express";
 import dotenv from "dotenv";
-
+import databaseConnection from "./db/conn.mjs"
 
 
 // Set up
@@ -9,6 +9,8 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+// Database connection
+databaseConnection()
 
 // Middleware
 app.use(express.json());
