@@ -32,8 +32,6 @@ Each collection is seeded with at least 25 initial randomly-generated documents.
 |    GET    | /api/jobseekers/:jobSeekerName   | Get a specific job by title            |
 |    PUT    | /api/jobseekers/:jobSeekerName   | Update a specific job by title         |
 |  DELETE   | /api/jobseekers/:jobSeekerName   | Delete a specific job by title         |
-|-----------|----------------------------------|----------------------------------------|
-
 
 ## Reflection
 `What could you have done differently during the planning stages of your project to make the execution easier?`
