@@ -28,7 +28,6 @@ app.use('/api/employers', employersRouter);
 
 
 
-
 // Listen
 app.listen(PORT, () => {
     console.log(`Server listening at port ${PORT}`)
