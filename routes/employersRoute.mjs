@@ -23,14 +23,23 @@ const employersRouter = express.Router();
 employersRouter
 .route('/')
 .post(async (req, res) => {
-    let newEmployer = await Employers.create(req.body);
-    employers.push(newEmployer);
-    res.json(newEmployer);
+    try {
+        let newEmployer = await Employers.create(req.body);
+        res.status(201).json(newEmployer);
+    } catch (err){
+        res.status(400).json({ msg: err.message });
+    }   
 })
+
 // GET all employers in the database
 .get(async (req, res)=> {
-    let allEmployers = await Employers.find({});
-    res.json(allEmployers);
+    try {
+        let allEmployers = await Employers.find({});
+        res.json(allEmployers);
+    } catch(err) {
+        res.status(500).json({ msg: err.message })
+    }
+    
 });
 
 // ================================ GET, UPDATE, DELETE by companyName ================================
@@ -40,8 +49,10 @@ employersRouter
 .get(async (req, res) => {
     try {
         let company = await Employers.findOne({ companyName: req.params.companyName });
-        if (!company) res.status(404).json({ msg: "Company not found" });
-        res.json(company);
+        if (!company) {
+            return res.status(404).json({ msg: "Company not found" });
+        }
+        return res.json(company);
     } catch (err) {
         res.status(500).json({ msg : err.message })
     }
@@ -53,8 +64,10 @@ employersRouter
         let updatedCompany = await Employers.findOneAndUpdate(
             { companyName: req.params.companyName }, req.body,
             {new: true});
-        if(!updatedCompany) return res.status(404).json({ msg: "Company not found" });    
-        res.json(updatedCompany)
+        if(!updatedCompany) {
+            return res.status(404).json({ msg: "Company not found" });   
+        } 
+        return res.json(updatedCompany)
     } catch (err) {
         res.status(400).json({ msg: err.message });
     }
@@ -65,11 +78,12 @@ employersRouter
 .delete(async (req, res) => {
     try {
         let deletedCompany = await Employers.findOneAndDelete({ companyName:req.params.companyName });
-        if (!deletedCompany) res.json({ msg: "Company doesn't exist"});
-
-        res.json( { msg: "Employer Deleted Successfully", deletedCompany })
+        if (!deletedCompany) {
+            return res.status(400).json({ msg: "Company doesn't exist"});
+        }
+        return res.json( { msg: "Employer Deleted Successfully", deletedCompany })
         } catch (err) {
-             res.status(400).json({ msg: err.message });
+             res.status(500).json({ msg: err.message });
 }
 });
 
