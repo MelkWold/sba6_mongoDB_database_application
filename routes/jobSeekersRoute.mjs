@@ -19,20 +19,61 @@ const jobSeekerRouter = express.Router();
 //     }
 // })
 
+//================================  CREATE a new job seeker ===========================================
+jobSeekerRouter
+.route('/')
+.post(async (req, res) => {
+    let newJobSeeker = await JobSeekers.create(req.body);
+    jobSeekers.push(newJobSeeker);
+    res.json(newJobSeeker);
+})
+// GET all employers in the database
+.get(async (req, res)=> {
+    let allJobSeekers = await JobSeekers.find({});
+    res.json(allJobSeekers);
+});
 
-// CREATE
+jobSeekerRouter
+.route('/:jobSeekerName')
+// GET a specific employer
+.get(async (req, res) => {
+    try {
+        let jobSeeker = await JobSeekers.findOne({ jobSeekerName: req.params.jobSeekerName });
+        if (!jobSeeker) res.status(404).json({ msg: "Job Seeker not found" });
+        res.json(jobSeeker);
+    } catch (err) {
+        res.status(500).json({ msg : err.message })
+    }
+})
 
+// UPDATE a specific job seeker after finding them by name
+.put(async (req, res) => {
+    try {
+        let updatedJobSeeker = await JobSeekers.findOneAndUpdate(
+            { jobSeekerName: req.params.jobSeekerName }, req.body,
+            {new: true});
+        if(!updatedJobSeeker) return res.status(404).json({ msg: "Job Seeker not found" });    
+        res.json(updatedJobSeeker)
+    } catch (err) {
+        res.status(400).json({ msg: err.message });
+    }
+    
+})
 
-// READ
+// DELETE a specific job seeker by name
+.delete(async (req, res) => {
+    try {
+        let deletedJobSeeker = await JobSeekers.findOneAndDelete({ 
+            jobSeekerName:req.params.jobSeekerName });
+        if (!deletedJobSeeker) {
+            res.json({ msg: "Job Seeker doesn't exist"});
+        }
 
-
-
-// UPDATE
-
-
-// DELETE
-
-
+        res.json({ msg: "Job Seeker Deleted Successfully", deletedJobSeeker });
+        } catch (err) {
+             res.status(400).json({ msg: err.message });
+}
+});
 
 
 

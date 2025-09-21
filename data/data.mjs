@@ -185,154 +185,154 @@ export const jobAdvertisements = [
 
 export const jobSeekers = [
         {
-          "jobSeekserName": "Alice Johnson",
-          "jobSeekserAddress": { "city": "New York", "state": "NY", "zipcode": "10001", "country": "USA" },
-          "jobSeekserField": "Frontend"
+          "jobSeekerName": "Alice Johnson",
+          "jobSeekerAddress": { "city": "New York", "state": "NY", "zipcode": "10001", "country": "USA" },
+          "jobSeekerField": "Frontend"
         },
         {
-          "jobSeekserName": "Brian Smith",
-          "jobSeekserAddress": { "city": "Los Angeles", "state": "CA", "zipcode": "90001", "country": "USA" },
-          "jobSeekserField": "Backend"
+          "jobSeekerName": "Brian Smith",
+          "jobSeekerAddress": { "city": "Los Angeles", "state": "CA", "zipcode": "90001", "country": "USA" },
+          "jobSeekerField": "Backend"
         },
         {
-          "jobSeekserName": "Carla Davis",
-          "jobSeekserAddress": { "city": "Chicago", "state": "IL", "zipcode": "60601", "country": "USA" },
-          "jobSeekserField": "Fullstack Development"
+          "jobSeekerName": "Carla Davis",
+          "jobSeekerAddress": { "city": "Chicago", "state": "IL", "zipcode": "60601", "country": "USA" },
+          "jobSeekerField": "Fullstack Development"
         },
         {
-          "jobSeekserName": "David Miller",
-          "jobSeekserAddress": { "city": "Houston", "state": "TX", "zipcode": "77001", "country": "USA" },
-          "jobSeekserField": "IT Support"
+          "jobSeekerName": "David Miller",
+          "jobSeekerAddress": { "city": "Houston", "state": "TX", "zipcode": "77001", "country": "USA" },
+          "jobSeekerField": "IT Support"
         },
         {
-          "jobSeekserName": "Emma Wilson",
-          "jobSeekserAddress": { "city": "Phoenix", "state": "AZ", "zipcode": "85001", "country": "USA" },
-          "jobSeekserField": "Teacher"
+          "jobSeekerName": "Emma Wilson",
+          "jobSeekerAddress": { "city": "Phoenix", "state": "AZ", "zipcode": "85001", "country": "USA" },
+          "jobSeekerField": "Teacher"
         },
         {
-          "jobSeekserName": "Frank Thomas",
-          "jobSeekserAddress": { "city": "Philadelphia", "state": "PA", "zipcode": "19019", "country": "USA" },
-          "jobSeekserField": "STEM"
+          "jobSeekerName": "Frank Thomas",
+          "jobSeekerAddress": { "city": "Philadelphia", "state": "PA", "zipcode": "19019", "country": "USA" },
+          "jobSeekerField": "STEM"
         },
         {
-          "jobSeekserName": "Grace Lee",
-          "jobSeekserAddress": { "city": "San Antonio", "state": "TX", "zipcode": "78201", "country": "USA" },
-          "jobSeekserField": "Arts"
+          "jobSeekerName": "Grace Lee",
+          "jobSeekerAddress": { "city": "San Antonio", "state": "TX", "zipcode": "78201", "country": "USA" },
+          "jobSeekerField": "Arts"
         },
         {
-          "jobSeekserName": "Henry Martinez",
-          "jobSeekserAddress": { "city": "San Diego", "state": "CA", "zipcode": "92101", "country": "USA" },
-          "jobSeekserField": "Frontend"
+          "jobSeekerName": "Henry Martinez",
+          "jobSeekerAddress": { "city": "San Diego", "state": "CA", "zipcode": "92101", "country": "USA" },
+          "jobSeekerField": "Frontend"
         },
         {
-          "jobSeekserName": "Isabella Brown",
-          "jobSeekserAddress": { "city": "Dallas", "state": "TX", "zipcode": "75201", "country": "USA" },
-          "jobSeekserField": "Backend"
+          "jobSeekerName": "Isabella Brown",
+          "jobSeekerAddress": { "city": "Dallas", "state": "TX", "zipcode": "75201", "country": "USA" },
+          "jobSeekerField": "Backend"
         },
         {
-          "jobSeekserName": "Jack White",
-          "jobSeekserAddress": { "city": "San Jose", "state": "CA", "zipcode": "95101", "country": "USA" },
-          "jobSeekserField": "Fullstack Development"
+          "jobSeekerName": "Jack White",
+          "jobSeekerAddress": { "city": "San Jose", "state": "CA", "zipcode": "95101", "country": "USA" },
+          "jobSeekerField": "Fullstack Development"
         },
         {
-          "jobSeekserName": "Kara Green",
-          "jobSeekserAddress": { "city": "Austin", "state": "TX", "zipcode": "73301", "country": "USA" },
-          "jobSeekserField": "IT Support"
+          "jobSeekerName": "Kara Green",
+          "jobSeekerAddress": { "city": "Austin", "state": "TX", "zipcode": "73301", "country": "USA" },
+          "jobSeekerField": "IT Support"
         },
         {
-          "jobSeekserName": "Liam Harris",
-          "jobSeekserAddress": { "city": "Jacksonville", "state": "FL", "zipcode": "32099", "country": "USA" },
-          "jobSeekserField": "Teacher"
+          "jobSeekerName": "Liam Harris",
+          "jobSeekerAddress": { "city": "Jacksonville", "state": "FL", "zipcode": "32099", "country": "USA" },
+          "jobSeekerField": "Teacher"
         },
         {
-          "jobSeekserName": "Mia Young",
-          "jobSeekserAddress": { "city": "Columbus", "state": "OH", "zipcode": "43004", "country": "USA" },
-          "jobSeekserField": "STEM"
+          "jobSeekerName": "Mia Young",
+          "jobSeekerAddress": { "city": "Columbus", "state": "OH", "zipcode": "43004", "country": "USA" },
+          "jobSeekerField": "STEM"
         },
         {
-          "jobSeekserName": "Noah Allen",
-          "jobSeekserAddress": { "city": "Fort Worth", "state": "TX", "zipcode": "76101", "country": "USA" },
-          "jobSeekserField": "Arts"
+          "jobSeekerName": "Noah Allen",
+          "jobSeekerAddress": { "city": "Fort Worth", "state": "TX", "zipcode": "76101", "country": "USA" },
+          "jobSeekerField": "Arts"
         },
         {
-          "jobSeekserName": "Olivia Scott",
-          "jobSeekserAddress": { "city": "Charlotte", "state": "NC", "zipcode": "28201", "country": "USA" },
-          "jobSeekserField": "Frontend"
+          "jobSeekerName": "Olivia Scott",
+          "jobSeekerAddress": { "city": "Charlotte", "state": "NC", "zipcode": "28201", "country": "USA" },
+          "jobSeekerField": "Frontend"
         },
         {
-          "jobSeekserName": "Paul King",
-          "jobSeekserAddress": { "city": "San Francisco", "state": "CA", "zipcode": "94101", "country": "USA" },
-          "jobSeekserField": "Backend"
+          "jobSeekerName": "Paul King",
+          "jobSeekerAddress": { "city": "San Francisco", "state": "CA", "zipcode": "94101", "country": "USA" },
+          "jobSeekerField": "Backend"
         },
         {
-          "jobSeekserName": "Quinn Adams",
-          "jobSeekserAddress": { "city": "Indianapolis", "state": "IN", "zipcode": "46201", "country": "USA" },
-          "jobSeekserField": "Fullstack Development"
+          "jobSeekerName": "Quinn Adams",
+          "jobSeekerAddress": { "city": "Indianapolis", "state": "IN", "zipcode": "46201", "country": "USA" },
+          "jobSeekerField": "Fullstack Development"
         },
         {
-          "jobSeekserName": "Rachel Baker",
-          "jobSeekserAddress": { "city": "Seattle", "state": "WA", "zipcode": "98101", "country": "USA" },
-          "jobSeekserField": "IT Support"
+          "jobSeekerName": "Rachel Baker",
+          "jobSeekerAddress": { "city": "Seattle", "state": "WA", "zipcode": "98101", "country": "USA" },
+          "jobSeekerField": "IT Support"
         },
         {
-          "jobSeekserName": "Samuel Perez",
-          "jobSeekserAddress": { "city": "Denver", "state": "CO", "zipcode": "80014", "country": "USA" },
-          "jobSeekserField": "Teacher"
+          "jobSeekerName": "Samuel Perez",
+          "jobSeekerAddress": { "city": "Denver", "state": "CO", "zipcode": "80014", "country": "USA" },
+          "jobSeekerField": "Teacher"
         },
         {
-          "jobSeekserName": "Tina Campbell",
-          "jobSeekserAddress": { "city": "Boston", "state": "MA", "zipcode": "02101", "country": "USA" },
-          "jobSeekserField": "STEM"
+          "jobSeekerName": "Tina Campbell",
+          "jobSeekerAddress": { "city": "Boston", "state": "MA", "zipcode": "02101", "country": "USA" },
+          "jobSeekerField": "STEM"
         },
         {
-          "jobSeekserName": "Umar Rivera",
-          "jobSeekserAddress": { "city": "Detroit", "state": "MI", "zipcode": "48201", "country": "USA" },
-          "jobSeekserField": "Arts"
+          "jobSeekerName": "Umar Rivera",
+          "jobSeekerAddress": { "city": "Detroit", "state": "MI", "zipcode": "48201", "country": "USA" },
+          "jobSeekerField": "Arts"
         },
         {
-          "jobSeekserName": "Victoria Mitchell",
-          "jobSeekserAddress": { "city": "Nashville", "state": "TN", "zipcode": "37201", "country": "USA" },
-          "jobSeekserField": "Frontend"
+          "jobSeekerName": "Victoria Mitchell",
+          "jobSeekerAddress": { "city": "Nashville", "state": "TN", "zipcode": "37201", "country": "USA" },
+          "jobSeekerField": "Frontend"
         },
         {
-          "jobSeekserName": "William Roberts",
-          "jobSeekserAddress": { "city": "El Paso", "state": "TX", "zipcode": "79901", "country": "USA" },
-          "jobSeekserField": "Backend"
+          "jobSeekerName": "William Roberts",
+          "jobSeekerAddress": { "city": "El Paso", "state": "TX", "zipcode": "79901", "country": "USA" },
+          "jobSeekerField": "Backend"
         },
         {
-          "jobSeekserName": "Xavier Gonzalez",
-          "jobSeekserAddress": { "city": "Portland", "state": "OR", "zipcode": "97201", "country": "USA" },
-          "jobSeekserField": "Fullstack Development"
+          "jobSeekerName": "Xavier Gonzalez",
+          "jobSeekerAddress": { "city": "Portland", "state": "OR", "zipcode": "97201", "country": "USA" },
+          "jobSeekerField": "Fullstack Development"
         },
         {
-          "jobSeekserName": "Yara Clark",
-          "jobSeekserAddress": { "city": "Oklahoma City", "state": "OK", "zipcode": "73101", "country": "USA" },
-          "jobSeekserField": "IT Support"
+          "jobSeekerName": "Yara Clark",
+          "jobSeekerAddress": { "city": "Oklahoma City", "state": "OK", "zipcode": "73101", "country": "USA" },
+          "jobSeekerField": "IT Support"
         },
         {
-          "jobSeekserName": "Zane Lewis",
-          "jobSeekserAddress": { "city": "Las Vegas", "state": "NV", "zipcode": "88901", "country": "USA" },
-          "jobSeekserField": "Teacher"
+          "jobSeekerName": "Zane Lewis",
+          "jobSeekerAddress": { "city": "Las Vegas", "state": "NV", "zipcode": "88901", "country": "USA" },
+          "jobSeekerField": "Teacher"
         },
         {
-          "jobSeekserName": "Amelia Walker",
-          "jobSeekserAddress": { "city": "Memphis", "state": "TN", "zipcode": "37501", "country": "USA" },
-          "jobSeekserField": "STEM"
+          "jobSeekerName": "Amelia Walker",
+          "jobSeekerAddress": { "city": "Memphis", "state": "TN", "zipcode": "37501", "country": "USA" },
+          "jobSeekerField": "STEM"
         },
         {
-          "jobSeekserName": "Benjamin Hall",
-          "jobSeekserAddress": { "city": "Louisville", "state": "KY", "zipcode": "40201", "country": "USA" },
-          "jobSeekserField": "Arts"
+          "jobSeekerName": "Benjamin Hall",
+          "jobSeekerAddress": { "city": "Louisville", "state": "KY", "zipcode": "40201", "country": "USA" },
+          "jobSeekerField": "Arts"
         },
         {
-          "jobSeekserName": "Chloe Allen",
-          "jobSeekserAddress": { "city": "Baltimore", "state": "MD", "zipcode": "21201", "country": "USA" },
-          "jobSeekserField": "Other"
+          "jobSeekerName": "Chloe Allen",
+          "jobSeekerAddress": { "city": "Baltimore", "state": "MD", "zipcode": "21201", "country": "USA" },
+          "jobSeekerField": "Other"
         },
         {
-          "jobSeekserName": "Daniel Edwards",
-          "jobSeekserAddress": { "city": "Milwaukee", "state": "WI", "zipcode": "53201", "country": "USA" },
-          "jobSeekserField": "Other"
+          "jobSeekerName": "Daniel Edwards",
+          "jobSeekerAddress": { "city": "Milwaukee", "state": "WI", "zipcode": "53201", "country": "USA" },
+          "jobSeekerField": "Other"
         }
 ];
 

@@ -1,15 +1,15 @@
 import mongoose from "mongoose";
 
 const jobSeekerSchema =  new mongoose.Schema({
-    jobSeekserName: {type: String, required:true},
-    jobSeekserAddress: 
+    jobSeekerName: {type: String, required:true},
+    jobSeekerAddress: 
     {
         city: { type: String, required:true},
         state: { type: String, required:true},
         zipcode: { type: String, required:true},
         country: { type: String, required:true}
     },
-    jobSeekserField: 
+    jobSeekerField: 
     {
         type: String,
         enum: ["IT Support", "Fullstack Development", "Backend", "Frontend", "Teacher", "STEM", "Arts", "Other"],

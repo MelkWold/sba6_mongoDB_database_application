@@ -19,11 +19,12 @@ const employersRouter = express.Router();
 //     }
 // })
 
-// CREATE a new employer
+// ================================  CREATE a new employer ===========================================
 employersRouter
 .route('/')
 .post(async (req, res) => {
     let newEmployer = await Employers.create(req.body);
+    employers.push(newEmployer);
     res.json(newEmployer);
 })
 // GET all employers in the database
@@ -32,7 +33,7 @@ employersRouter
     res.json(allEmployers);
 });
 
-// GET, UPDATE, DELETE by companyName
+// ================================ GET, UPDATE, DELETE by companyName ================================
 employersRouter
 .route('/:companyName')
 // GET a specific employer
@@ -65,10 +66,13 @@ employersRouter
     try {
         let deletedCompany = await Employers.findOneAndDelete({ companyName:req.params.companyName });
         if (!deletedCompany) res.json({ msg: "Company doesn't exist"});
-        res.json(deletedCompany)
+
+        res.json( { msg: "Employer Deleted Successfully", deletedCompany })
         } catch (err) {
              res.status(400).json({ msg: err.message });
 }
-})
+});
+
+
 
 export default employersRouter;
