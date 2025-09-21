@@ -1,20 +1,12 @@
 # SBA 319: MongoDB Database Application
 
-## Objectives
-- Create a server application with Node, Express, and MongoDB.
-- Create a CRUD API using Express and MongoDB.
-- Create MongoDB indexes.
-- Use MongoDB indexing to make efficient queries.
-- Create MongoDB validation rules.
-- Use MongoDB validation to ensure data consistency._
-
-
 ## Project Description and Features
-This project is designed to create a database and user interface that connects employers, employees and job advertisements. Three schemas are defined in the project:
-1. employerSchema
-2. jobAdvertisementSchema
-3. jobSeekerSchema
+This project is designed to create a database and user interface that connects employers, employees and job advertisements. Three schemas are created with **data validation rules** and **indices** that enhance query performace. 
+Each collection is seeded with at least 25 initial randomly-generated documents. The schema included in the database are:
 
+1. employerSchema: defines the schema for the Employers collection.
+2. jobAdvertisementSchema: defines the schema for the Job Advertisements collection.
+3. jobSeekerSchema: defines the schema for the Job Seekers collection.
 
 ## Languages, tools and frameworks uses:
 1. JavaScript
@@ -23,9 +15,24 @@ This project is designed to create a database and user interface that connects e
 4. Node.js
 
 ## API Endpoints
-
-
-## Views
+|   Method  |          Endpoint                |    Description                         |
+|-----------|----------------------------------|----------------------------------------|
+|    POST   | /api/jobs                        | Create a new job advertisement         |
+|    GET    | /api/jobs                        | Get all jobs in the database           |
+|    GET    | /api/jobs/:title                 | Get a specific job by title            |
+|    PUT    | /api/jobs/:title                 | Update a specific job by title         |
+|  DELETE   | /api/jobs/:title                 | Delete a specific job by title         |
+|    POST   | /api/employers                   | Create a new job advertisement         |
+|    GET    | /api/employers                   | Get all jobs in the database           |
+|    GET    | /api/employers/:companyName      | Get a specific job by title            |
+|    PUT    | /api/employers/:companyName      | Update a specific job by title         |
+|  DELETE   | /api/employers/:companyName      | Delete a specific job by title         |
+|    POST   | /api/jobseekers                  | Create a new job advertisement         |
+|    GET    | /api/jobseekers                  | Get all jobs in the database           |
+|    GET    | /api/jobseekers/:jobSeekerName   | Get a specific job by title            |
+|    PUT    | /api/jobseekers/:jobSeekerName   | Update a specific job by title         |
+|  DELETE   | /api/jobseekers/:jobSeekerName   | Delete a specific job by title         |
+|-----------|----------------------------------|----------------------------------------|
 
 
 ## Reflection
