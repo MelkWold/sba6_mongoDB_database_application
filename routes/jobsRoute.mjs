@@ -19,20 +19,63 @@ const jobsRouter = express.Router();
 //     }
     
 // })
+jobsRouter
+.route('/')
+.post(async (req, res) => {
+    let newJob = await Jobs.create(req.body);
+    jobAdvertisements.push(newJob);
+    res.json(newJob);
+})
+// GET all jobs in the database
+.get(async (req, res)=> {
+    let allJobs = await Jobs.find({});
+    res.json(allJobs);
+});
+
+jobsRouter
+.route('/:title')
+// GET a specific job advertisement
+.get(async (req, res) => {
+    try {
+        let jobAd = await Jobs.findOne({ title: req.params.title});
+        if (!jobAd) res.status(404).json({ msg: "Job Advertisement not found" });
+        res.json(jobAd);
+    } catch (err) {
+        res.status(500).json({ msg : err.message })
+    }
+})
+
+// UPDATE a specific job Ad after finding it by title
+.put(async (req, res) => {
+    try {
+        let updatedJobAd = await Jobs.findOneAndUpdate(
+            { title: req.params.title }, req.body,
+            {new: true});
+        if(!updatedJobAd) return res.status(404).json({ msg: "Job Advertisement not found" });    
+        res.json(updatedJobAd)
+    } catch (err) {
+        res.status(400).json({ msg: err.message });
+    }
+    
+})
+
+// DELETE a specific job seeker by title
+.delete(async (req, res) => {
+    try {
+        let deletedJobAd = await Jobs.findOneAndDelete({ 
+            title:req.params.title });
+        if (!deletedJobAd) {
+            res.json({ msg: "Job Advertisement doesn't exist"});
+        }
+
+        res.json({ msg: "Job Advertisement Deleted Successfully", deletedJobAd });
+        } catch (err) {
+             res.status(400).json({ msg: err.message });
+}
+});
 
 
 
-// CREATE
-
-
-// READ
-
-
-
-// UPDATE
-
-
-// DELETE
 
 
 export default jobsRouter;

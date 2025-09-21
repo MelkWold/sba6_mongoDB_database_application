@@ -27,7 +27,7 @@ jobSeekerRouter
     jobSeekers.push(newJobSeeker);
     res.json(newJobSeeker);
 })
-// GET all employers in the database
+// GET all Job seekers in the database
 .get(async (req, res)=> {
     let allJobSeekers = await JobSeekers.find({});
     res.json(allJobSeekers);
@@ -35,7 +35,7 @@ jobSeekerRouter
 
 jobSeekerRouter
 .route('/:jobSeekerName')
-// GET a specific employer
+// GET a specific job seeker
 .get(async (req, res) => {
     try {
         let jobSeeker = await JobSeekers.findOne({ jobSeekerName: req.params.jobSeekerName });
